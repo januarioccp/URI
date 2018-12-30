@@ -12,6 +12,6 @@ int main() {
     int B;
     scanf("%d",&A);
     scanf("%d",&B);
-    printf("SOMA = %d\n",A+B);
+    printf("PROD = %d\n",A*B);
     return 0;
 }
