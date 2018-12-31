@@ -1,0 +1,10 @@
+# Link to each Problem Description
+* [1087 - Dama.cpp](https://www.urionlinejudge.com.br/judge/pt/problems/view/1087)
+* [1002 - Area do Circulo.c](https://www.urionlinejudge.com.br/judge/pt/problems/view/1002)
+* [1003 - Soma Simples.c](https://www.urionlinejudge.com.br/judge/pt/problems/view/1003)
+* [1046 - Tempo de Jogo.cpp](https://www.urionlinejudge.com.br/judge/pt/problems/view/1046)
+* [1067 - Numeros impares.cpp](https://www.urionlinejudge.com.br/judge/pt/problems/view/1067)
+* [1001 - Extremamente basico.c](https://www.urionlinejudge.com.br/judge/pt/problems/view/1001)
+* [1066 - Pares, Impares, Positivos e Negativos.cpp](https://www.urionlinejudge.com.br/judge/pt/problems/view/1066)
+* [1078 - Tabuada.cpp](https://www.urionlinejudge.com.br/judge/pt/problems/view/1078)
+* [1004 - Produto Simples.c](https://www.urionlinejudge.com.br/judge/pt/problems/view/1004)
