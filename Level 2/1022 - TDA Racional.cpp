@@ -8,28 +8,40 @@ int main() {
     int caseTests;
 
     // input data
-    int PA,PB;
-    double G1, G2;
+    int n1,d1,n2,d2;
+    char t1,t2;
+    char symbol;
+    int n3, d3;
 
     // read the caseTests
     cin>>caseTests;
 
-    int answer;
-
     // read all numbers
-    while(caseTests > 0){
-        cin>>PA>>PB>>G1>>G2;
-        answer = 0;
-        while(PA <= PB && answer <= 100){
-            PA = PA + (double)PA*(G1/100);
-            PB = PB + (double)PB*(G2/100);
-            answer++;
+    while(caseTests-- > 0){
+        // It is easier to read with scanf :-)
+        scanf("%d %c %d %c %d %c %d",&n1,&t1,&d1,&symbol,&n2,&t2,&d2);
+       
+        // evaluate the symbol
+        if(symbol == '+'){
+            n3 = n1*d2 + n2*d1;
+            d3 = d1*d2;
         }
-        if(answer > 100)
-            cout<<"Mais de 1 seculo."<<endl;
-        else
-            cout<<answer<<" anos."<<endl;
-        caseTests--;
+        if(symbol == '-'){
+            n3 = n1*d2 - n2*d1;
+            d3 = d1*d2;
+        }
+        if(symbol == '*'){
+            n3 = n1*n2;
+            d3 = d1*d2;
+        }
+        if(symbol == '/'){
+            n3 = n1*d2;
+            d3 = n2*d1;
+        }
+        
+        // Compute the greatest common divisor
+        int gcd = abs(__gcd(n3,d3));
+        cout<<n3<<'/'<<d3<<" = "<<n3/gcd<<'/'<<d3/gcd<<endl;
     }
     return 0;
 }
