@@ -11,4 +11,3 @@
 * [1070 - Seis Números Ímpares](https://www.urionlinejudge.com.br/judge/pt/problems/view/1070)
 * [1078 - Tabuada](https://www.urionlinejudge.com.br/judge/pt/problems/view/1078)
 * [1087 - Dama](https://www.urionlinejudge.com.br/judge/pt/problems/view/1087)
-* [a](https://www.urionlinejudge.com.br/judge/pt/problems/view/a.ou)

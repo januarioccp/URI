@@ -16,7 +16,7 @@ for directory in subfolders:
         # write the necessary information in the README file
         readme.write("# Link to each Problem Description\n")
         for solution in files:
-            if(solution[0]=='r') or (solution[0]=='R'):
+            if(solution[0]=='a') or (solution[0]=='R'):
                 continue
             else:
                 readme.write("* ["+solution[:-4]+"](https://www.urionlinejudge.com.br/judge/pt/problems/view/"+solution[:4]+")\n")
