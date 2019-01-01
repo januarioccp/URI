@@ -1,6 +1,7 @@
 import os
 readme=open('./README.md', 'w+')
 arr = os.listdir(".")
+arr.sort()
 readme.write("# Link to each Problem Description\n")
 for solution in arr:
     if(solution[0]=='r') or (solution[0]=='R'):
