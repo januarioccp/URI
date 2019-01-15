@@ -19,5 +19,5 @@ for directory in subfolders:
             if(solution[0]=='a') or (solution[0]=='R'):
                 continue
             else:
-                readme.write("* ["+solution[:-4]+"](https://www.urionlinejudge.com.br/judge/pt/problems/view/"+solution[:4]+")\n")
+                readme.write("* ["+solution[:-4]+"](https://www.urionlinejudge.com.br/judge/en/problems/view/"+solution[:4]+")\n")
         readme.close()
