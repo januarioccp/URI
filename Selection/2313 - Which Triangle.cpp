@@ -1,40 +1,46 @@
 #include <iostream>
- 
+#include <algorithm>
 using namespace std;
  
 int main() {
  
-    double salario;
-    double novo_salario;
-    double reajuste;
-    double percentual;
-    
-    cin>>salario;
+    int a,b,c;
+    bool retangulo = false;
+    cin>>a>>b>>c;
  
-    if (salario > 2000.0){
-        percentual = 4.0;        
-        novo_salario = salario*(1+percentual/100);
-        reajuste = novo_salario - salario;       
-    } else if (salario > 1200.0){
-        percentual = 7.0;        
-        novo_salario = salario*(1+percentual/100);
-        reajuste = novo_salario - salario;       
-    } else if (salario > 800.0){
-        percentual = 10.0;        
-        novo_salario = salario*(1+percentual/100);
-        reajuste = novo_salario - salario;       
-    } else if (salario > 400.0){
-        percentual = 12.0;        
-        novo_salario = salario*(1+percentual/100);
-        reajuste = novo_salario - salario;       
-    } else if (salario >= 0.0){
-        percentual = 15.0;        
-        novo_salario = salario*(1+percentual/100);
-        reajuste = novo_salario - salario;       
+    if(b > a)
+        swap(a,b);
+    if(c > a)
+        swap(a,c);
+    if(c > b)
+     swap(c,b);
+
+    // Now a > b > c
+
+    if(a*a == b*b + c*c)
+        retangulo = true;
+
+    if(a < b+c){
+        if (a==b && a==c)
+        {
+            cout<<"Valido-Equilatero"<<endl;
+            cout<<"Retangulo: N"<<endl;
+        }
+        else 
+            if (a!=b && a!=c && b!=c)
+            {
+                cout<<"Valido-Escaleno"<<endl;
+                cout<<"Retangulo: "<<((retangulo) ? "S" : "N")<<endl;
+            }
+            else 
+                if (a == b || a == c || b == c)
+                {
+                    cout<<"Valido-Isoceles"<<endl;
+                    cout<<"Retangulo: "<<((retangulo) ? "S" : "N")<<endl;
+                }
     }
-    printf("Novo salario: %.2f\n",novo_salario);
-    printf("Reajuste ganho: %.2f\n",reajuste);
-    printf("Em percentual: %.0f \%\n",percentual);
-    
+    else
+        cout<<"Invalido"<<endl;
+
     return 0;
 }
